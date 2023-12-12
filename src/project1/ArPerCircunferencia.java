@@ -10,7 +10,7 @@ public class ArPerCircunferencia {
 		System.out.println("Introduce el radio de la circunferencia");
 		radio=entrada.nextInt();
 		System.out.println("El area de la circunferencia es: "+AreaCircunferencia(radio));
-		System.out.println("El perimetro de la circunferencia es:"+PerimetroCircunferencia(radio));
+		System.out.println("El perimetro de la circunferencia es: "+PerimetroCircunferencia(radio));
 
 	}
 	public static double AreaCircunferencia(int radio) {
