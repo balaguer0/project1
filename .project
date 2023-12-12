@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
+<<<<<<< HEAD
 	<name>proyect1</name>
+=======
+	<name>project1</name>
+>>>>>>> branch 'master' of https://github.com/balaguer0/project1
 	<comment></comment>
 	<projects>
 	</projects>
