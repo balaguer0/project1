@@ -1,9 +1,9 @@
 package proyect1;
 
-public class PerArCircunferencia {
+public class DJGHKDGBD {
 
 	public static void main(String[] args) {
-		System.out.println("Adios");
+		// TODO Auto-generated method stub
 
 	}
 
