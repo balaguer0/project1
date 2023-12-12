@@ -1,4 +1,4 @@
-package proyect1;
+package project1;
 
 public class DJGHKDGBD {
 
