@@ -6,23 +6,36 @@ public class Funciones {
 	
 	public static void main(String[]args) {
 		Scanner entrada= new Scanner(System.in);
-		int radio,lado1,lado2,base,altura;
+		int radio,lado1,lado2,base,altura, altura2;
 		System.out.println("Introduce la base y la altura del Triangulo");
 		base=entrada.nextInt();
 		altura=entrada.nextInt();
 		System.out.println("Introduce el radio de la circunferencia");
 		radio=entrada.nextInt();
+		System.out.println("Introduce la altura del cilindro:");
+		altura2=entrada.nextInt();
+		
 		System.out.println("Introduce los lados del rectangulo");
 		lado1=entrada.nextInt();
 		lado2=entrada.nextInt();
+		
 		areaYPerimetroCincunferencia(radio);
 		areaRectangulo(lado1,lado2);
-		System.out.println("El area de un Triangulo es: "+calcularAreaTri(base, altura));
-		
+		System.out.println("El area del Triangulo es: "+calcularAreaTri(base, altura));
+		System.out.println("El area del Cilindro es: "+areacilindro(radio, altura));
 	
 	
 		
 	}
+	public static double areacilindro(int radio,int altura) {
+		double pi=3.1416;
+		double areaTotalBases=AreaCircunferencia(radio)*2;
+		double areaCurva=2*pi*radio*altura;
+		
+		return areaTotalBases+areaCurva;
+		
+	}
+	
 	public static double calcularAreaTri(int base,int altura) {
 		
 		return (base*altura)/2;
