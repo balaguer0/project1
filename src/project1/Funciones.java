@@ -6,24 +6,37 @@ public class Funciones {
 	
 	public static void main(String[]args) {
 		Scanner entrada= new Scanner(System.in);
-		int radio,lado1,lado2,base,altura, altura2,ladoCubo;
+		int radio,lado1,lado2,base,altura, altura2,ladoCubo2,alturacubo,ancho, ladocubo1;
+		//Triangulo
 		System.out.println("Introduce la base y la altura del Triangulo");
 		base=entrada.nextInt();
 		altura=entrada.nextInt();
+		//circunferencia
 		System.out.println("Introduce el radio de la circunferencia");
 		radio=entrada.nextInt();
+		//cilindro
 		System.out.println("Introduce la altura del cilindro:");
 		altura2=entrada.nextInt();
+		//rectangulo
 		System.out.println("Introduce los lados del rectangulo");
 		lado1=entrada.nextInt();
 		lado2=entrada.nextInt();
+		//cuadrado
+		System.out.println("Introduce el lado la altura y anchura de un cubo");
+		ladocubo1=entrada.nextInt();
+		alturacubo=entrada.nextInt();
+		ancho=entrada.nextInt();
+		
 		System.out.println("Introduce el lado de la cara de un cuadrado");
-		ladoCubo=entrada.nextInt();
+		ladoCubo2=entrada.nextInt();
 		areaYPerimetroCincunferencia(radio);
 		areaRectangulo(lado1,lado2);
 		System.out.println("El area del Triangulo es: "+calcularAreaTri(base, altura));
 		System.out.println("El area del Cilindro es: "+areacilindro(radio, altura));
-		System.out.println("El area de un cubo es: "+areaCubo(ladoCubo));
+		System.out.println("el volumen del cubo es;"+volumencubo(ladocubo1,alturacubo,ancho));
+		System.out.println("El area de un cubo es: "+areaCubo(ladoCubo2));
+		
+
 	
 	
 		
@@ -58,6 +71,11 @@ public class Funciones {
 	public static void areaRectangulo(int lado1,int lado2) {
 		System.out.println("El area de un rectangulo es: "+lado1*lado2);
 	}
+	public static double volumencubo(int ladocubo1, int alturacubo,int ancho){
+		return(ladocubo1*alturacubo*ancho);
+
+	}
+	
 	public static double areaCubo(int lado) {
 		return (lado*lado)*6;
 	}
